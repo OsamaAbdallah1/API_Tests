@@ -3,10 +3,7 @@ import org.junit.jupiter.api.Test;
 import pojo.Location;
 import pojo.Place;
 import pojo.Response;
-
-
 import java.util.List;
-import java.util.Properties;
 import utils.PropertiesHandling;
 
 public class TestRunner {
@@ -40,7 +37,6 @@ public class TestRunner {
             }
 
             Assertions.assertTrue(expectedValueFound, "Post code 70597 with place name containing 'Stuttgart Degerloch' not found");
-            // Assertions.assertEquals(getRequest.responseTime <= 1000, "Expected response time is below 1 second");
             Assertions.assertTrue(getRequest.responseTime <= 1000, "Expected response time is below 1 second");
 
         }
